@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>フォームの入力チェック</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="maincontents">
+      <h2 class="heading-contact">CONTACT</h2>
+
+      <section class="form-wrap">
+        <form class="form-contact">
+          <div class="form-parts-wrap">
+            <label for="name" class="form-label"
+              >お名前<span class="required">必須</span></label
+            >
+            <input
+              type="text"
+              name="name"
+              type="text"
+              class="name form-singleline"
+            />
+            <span class="check-msg"></span>
+          </div>
+
+          <div class="form-parts-wrap">
+            <label for="e-mail" class="form-label"
+              >E-Mail<span class="required">必須</span></label
+            >
+            <input
+              type="text"
+              name="e-mail"
+              type="text"
+              class="mail form-singleline"
+            />
+            <span class="check-msg"></span>
+          </div>
+
+          <div class="form-parts-wrap">
+            <label for="tel" class="form-label"
+              >TEL<span class="required">必須</span></label
+            >
+            <input
+              type="text"
+              name="tel"
+              type="text"
+              class="tel form-singleline"
+            />
+            <span class="check-msg"></span>
+          </div>
+
+          <div class="form-parts-wrap">
+            <label for="comment" class="form-label"
+              >ご要望・ご質問など<span class="required">必須</span></label
+            >
+            <textarea
+              name="comment"
+              type="text"
+              class="comment form-multiline"
+            ></textarea>
+            <span class="check-msg"></span>
+          </div>
+
+          <div class="form-submitbtn-wrap">
+            <input
+              type="submit"
+              value="入力内容を確認する"
+              class="form-submitbtn"
+            />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/formcheck_start.js"></script>
+  </body>
+</html>
